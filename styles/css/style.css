@@ -16,12 +16,11 @@ body {
   width: 100%;
   align-items: center;
   height: 10vh;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
   background-color: rgb(20, 20, 20);
   position: fixed;
   z-index: 1;
 }
-
 
 .navbar .logo {
   margin-left: 50px;
@@ -42,26 +41,26 @@ body {
   justify-content: space-evenly;
 }
 
-.nav-links button{
- color: #fff;
- position: relative; 
- font-size: 1.3rem;
- font-weight: 500;
- cursor: pointer;
- border: none;
- background: none;
- outline: none;
+.nav-links button {
+  color: #fff;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
 }
 
 .nav-links button:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(37,37,37);
+  background: rgb(37, 37, 37);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -86,27 +85,27 @@ body {
 }
 
 .image {
-height: 65%;
-width: 25%;
- }
+  height: 65%;
+  width: 25%;
+}
 
- .offer {
-   width: 75vw;
-   height: 50vh;
-   margin: 0 auto 99px auto;
-   display:flex;
-   justify-content: space-between;
- }
+.offer {
+  width: 75vw;
+  height: 50vh;
+  margin: 0 auto 99px auto;
+  display: flex;
+  justify-content: space-between;
+}
 
- h2 {
+h2 {
   font-size: 2rem;
- }
+}
 
- .list {
-   margin: 30px 0 0 25px;
- }
+.list {
+  margin: 30px 0 0 25px;
+}
 
- hr { 
+hr {
   height: 6px;
   width: 100%;
   color: black;
@@ -115,17 +114,17 @@ width: 25%;
 }
 
 a.contact-button {
-  display:inline-block;
-  padding:1em 2em;
+  display: inline-block;
+  padding: 1em 2em;
   margin: 40px 0;
-  border-radius:2em;
+  border-radius: 2em;
   box-sizing: border-box;
-  text-decoration:none;
-  font-family:'Roboto',sans-serif;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color:#fff;
+  color: #fff;
   background-color: black;
-  text-align:center;
+  text-align: center;
   transition: all 0.2s;
 }
 
@@ -140,11 +139,11 @@ a.contact-button:hover {
   text-align: center;
   background-color: #fff;
   padding: 25px 35px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.23), -10px 8px 25px rgba(0,0,0,0.23), 10px 8px 25px rgba(0,0,0,0.23);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.23),
+    -10px 8px 25px rgba(0, 0, 0, 0.23), 10px 8px 25px rgba(0, 0, 0, 0.23);
   border-radius: 3%;
   border-style: ridge;
   border-color: black;
-  
 }
 
 .experiencehead {
@@ -157,7 +156,8 @@ a.contact-button:hover {
   height: 95vh;
   text-align: center;
   padding: 25px 35px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.23), -10px 8px 25px rgba(0,0,0,0.23), 10px 8px 25px rgba(0,0,0,0.23);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.23),
+    -10px 8px 25px rgba(0, 0, 0, 0.23), 10px 8px 25px rgba(0, 0, 0, 0.23);
   border-radius: 2%;
   border-style: ridge;
   border-color: black;
@@ -187,9 +187,9 @@ a.contact-button:hover {
 }
 
 input::-webkit-input-placeholder {
-    font-size: 1.2rem;
-    line-height: 3;
-    font-style: italic;
+  font-size: 1.2rem;
+  line-height: 3;
+  font-style: italic;
 }
 
 .form-list label {
@@ -200,27 +200,29 @@ input::-webkit-input-placeholder {
   display: flex;
 }
 
-.map {
-  margin: 0 auto;
-  width: 70vw;
-  height: 60vh;
-  border: 2.5px solid black;
+.hitta {
+  text-align: center;
 }
 
-.mapdiv {
-  display: flex;
-  justify-content: center;
+#map {
+  height: 400px;
+  width: 100%;
 }
-
 
 .footer {
   position: fixed;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
-
+  height: 70px;
+  margin: 0 0 20px 20px;
 }
 
-
-
+.footer-content {
+  width: 380px;
+  color: #fff;
+  background-color: rgb(54, 54, 54);
+  padding: 10px 10px;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(20, 20, 20);
+}
