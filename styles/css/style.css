@@ -288,6 +288,7 @@ a.contact-button:hover {
 .contact-secondary {
   text-align: center;
   font-size: 1.6rem;
+  opacity: 0;
 }
 
 .contact-bar {
@@ -310,6 +311,7 @@ a.contact-button:hover {
   border-radius: 0.6em;
   border: 0.5px solid rgba(0, 0, 0, 0.23);
   padding: 10px 10px;
+  opacity: 0;
 }
 
 #contact-form {
@@ -426,6 +428,7 @@ textarea:focus {
   left: 78%;
   text-align: center;
   width: 400px;
+  opacity: 0;
 }
 
 .social-media h4 {

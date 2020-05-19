@@ -4,6 +4,10 @@ import {
   scrollToContact,
   aboutHeaderSlide,
   leftSlide,
+  contactHeaderSlide,
+  formSlide,
+  socialSlide,
+  socialHead,
 } from './gsap.js';
 
 // GSAP animations on about section
@@ -12,8 +16,16 @@ const sliding = () => {
   leftSlide();
 };
 
+// Gsap animations on contact section
+const contactSlides = () => {
+  contactHeaderSlide();
+  formSlide();
+  socialSlide();
+  socialHead();
+};
+
 const about = $('.header-secondary');
-const contact = $('#contact');
+const contact = $('.contact-secondary');
 let triggeredAbout = false;
 let triggeredContact = false;
 
