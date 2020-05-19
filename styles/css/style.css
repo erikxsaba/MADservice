@@ -173,6 +173,7 @@ body {
 
 .header-secondary {
   margin: 0 0 50px 280px;
+  opacity: 0;
 }
 
 .about-bar {
@@ -218,6 +219,7 @@ body {
 .column {
   width: 40vw;
   margin: 10px 120px;
+  opacity: 0;
 }
 
 .text-header {
