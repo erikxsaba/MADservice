@@ -6,13 +6,9 @@
 
 body {
   background-color: rgb(238, 238, 238);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.title {
-  font-size: 2.7rem;
-  padding: 0 7px 0 0;
-}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -21,7 +17,7 @@ body {
   align-items: center;
   height: 70px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(19, 19, 26);
   position: fixed;
   z-index: 1;
 }
@@ -79,16 +75,17 @@ body {
 }
 
 #home {
-  height: 100vh;
+  height: 65vh;
   position: relative;
 }
 
 .image-container {
   position: absolute;
-  height: 70%;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
 }
 
 .image-container img {
@@ -96,7 +93,7 @@ body {
   width: 100%;
   object-fit: cover;
   position: absolute;
-  filter: grayscale(40%);
+  filter: grayscale(70%);
   opacity: 0.7;
 }
 .image-container:after {
@@ -106,30 +103,84 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(34, 34, 34, 0.849);
+  background: rgba(49, 49, 49, 0.849);
 }
 .home-content {
   width: 80vw;
-  font-size: 1.6rem;
   height: 40vh;
   font-weight: 600;
 }
 
 .bread {
   position: absolute;
-  top: 20%;
-  color: rgb(218, 218, 218);
+  top: 34%;
+  color: #ffffff;
   left: 150px;
+  font-size: 2.2rem;
 }
 
 .logo-img {
   position: absolute;
   background-image: url('../../madlogo.png');
   background-size: contain;
-  height: 300px;
-  width: 300px;
-  left: 70%;
-  top: 235px;
+  height: 250px;
+  width: 250px;
+  left: 75%;
+  top: 34%;
+}
+
+.btn-home {
+  position: absolute;
+  bottom: 22%;
+  left: 30%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.6em;
+  border: 0.1em solid rgb(19, 19, 26);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: rgb(19, 19, 26);
+}
+
+.btn:hover {
+  background-color: rgb(26, 26, 26);
+  border-color: rgb(26, 26, 26);
+}
+
+#about {
+  height: 100%;
+  position: relative;
+}
+
+.about-section {
+  padding: 70px 0 0 0;
+  position: relative;
+}
+
+.column {
+  width: 40vw;
+  margin: 10px 0;
+}
+
+.text-header {
+  font-size: 1.5rem;
+  margin: 12px 0;
+  color: rgb(19, 19, 26);
+}
+
+.bread-text {
+  color: rgb(19, 19, 26);
+  font-size: 1.2rem;
+  margin: 0 0 40px 0;
 }
 
 .offer {
@@ -270,19 +321,16 @@ input::-webkit-input-placeholder {
   border: 2px solid rgb(20, 20, 20);
 }
 
-@media (max-width: 1200px) {
-  .home-content {
-    margin: 100px auto;
-  }
-  .title {
-    font-size: 1.2rem;
-  }
+@media (max-width: 1320px) {
   .bread {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    left: 50px;
   }
 
   .logo-img {
-    left: 10%;
-    top: 400px;
+    left: 70%;
+    top: 220px;
+    height: 240px;
+    width: 240px;
   }
 }
