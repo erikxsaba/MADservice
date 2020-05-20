@@ -283,7 +283,7 @@ a.contact-button:hover {
 }
 
 .experience {
-  height: 55vh;
+  height: 100%;
   width: 60vw;
   margin: 50px auto;
   text-align: center;
@@ -298,6 +298,11 @@ a.contact-button:hover {
 
 .experiencehead {
   margin: 0 0 15px 0;
+  font-size: 1.7rem;
+}
+
+.experiencebread {
+  font-size: 1.2rem;
 }
 
 #contact {
@@ -453,11 +458,6 @@ textarea:focus {
 }
 
 .social-media h4 {
-  font-size: 2rem;
-}
-
-.hitta {
-  text-align: center;
   font-size: 2rem;
 }
 
