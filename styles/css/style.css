@@ -289,8 +289,9 @@ a.contact-button:hover {
   text-align: center;
   background-color: #fff;
   padding: 25px 35px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.23),
-    -10px 8px 25px rgba(0, 0, 0, 0.23), 10px 8px 25px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 8px 13px 14px rgba(190, 190, 190, 0.199),
+    -10px 8px 18px 14px rgba(190, 190, 190, 0.199),
+    10px 8px 18px 14px rgba(190, 190, 190, 0.199);
   border-radius: 3%;
   border: 0.5px solid rgba(0, 0, 0, 0.23);
 }
