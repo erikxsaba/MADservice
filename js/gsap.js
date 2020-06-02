@@ -45,7 +45,7 @@ export const scrollHome = () => {
 
 // Scroll to about section
 export const scrollToAbout = () => {
-  gsap.to(window, { duration: 0.7, scrollTo: '.header-secondary' });
+  gsap.to(window, { duration: 0.7, scrollTo: '.kitchen' });
 };
 
 // Scroll to contact
