@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAD | Befintlig kund</title>
+    <link rel="stylesheet" href="./styles/css/style.css" />
+  </head>
+  <body class="befintlig-bg">
+    <nav class="navbar">
+      <h1 class="logo">MAD Service</h1>
+      <ul class="nav-links">
+        <li>
+          <button><a href="index.html">Hem</a></button>
+        </li>
+        <li>
+          <button><a href="index.html">Kontakt</a></button>
+        </li>
+        <li>
+          <button><a href="index.html">Om Oss</a></button>
+        </li>
+        <li>
+          <button><a href="befintligkund.html">Befintlig kund</a></button>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="befintlig-form">
+      <form id="befintlig-form">
+        <label for="projekt">Projekt</label>
+        <input type="text" name="projekt" required />
+        <label for="personer">Antal Personer</label>
+        <input type="text" name="personer" required />
+        <label for="adress">Adress,tid</label>
+        <input type="text" name="adress" required />
+        <label for="random">###</label>
+        <input type="text" name="random" required />
+        <label for="message">Övrigt</label>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <div id="success">
+          <div>Meddelande skickat.<i id="close" class="fas fa-times"></i></div>
+        </div>
+        <input type="submit" class="btn-contact" id="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
