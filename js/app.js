@@ -104,3 +104,35 @@ $('.btn').click(event => {
   event.preventDefault();
   scrollToContact();
 });
+
+$('#contact-form').submit(event => {
+  event.preventDefault();
+
+  $.ajax({
+    url: 'https://formspree.io/mnqgvvyb',
+    method: 'POST',
+    data: { message: $('form').serialize() },
+    dataType: 'json',
+  }).done(response => {
+    $('#success').addClass('expand');
+    $('#contact-form')
+      .find('input[type=text], input[type=email], textarea')
+      .val('');
+  });
+});
+
+$('#befintlig-form').submit(event => {
+  event.preventDefault();
+
+  $.ajax({
+    url: 'https://formspree.io/mnqgvvyb',
+    method: 'POST',
+    data: { message: $('form').serialize() },
+    dataType: 'json',
+  }).done(response => {
+    $('#success').addClass('expand');
+    $('#contact-form')
+      .find('input[type=text], input[type=email], textarea')
+      .val('');
+  });
+});
