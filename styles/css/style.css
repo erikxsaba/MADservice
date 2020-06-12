@@ -8,6 +8,7 @@ body {
   background-color: rgb(238, 238, 238);
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 .navbar {
@@ -508,7 +509,7 @@ textarea:focus {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
   height: 70px;
   margin: 0 0 20px 20px;
 }
@@ -521,13 +522,35 @@ textarea:focus {
   border-radius: 0.5rem;
   border: 2px solid rgb(20, 20, 20);
 }
+
+.nav-links .befintligkund a {
+  color: red;
+}
+
+.nav-links .befintligkund:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
 @media screen and (max-width: 414px) {
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .footer-content {
+    width: 320px;
+  }
   .navbar {
     width: 100vw;
   }
-  .nav-links {
-    display: none;
-  }
+
   .navbar .logo {
     margin-left: 25px;
     font-size: 1.5rem;
@@ -535,10 +558,9 @@ textarea:focus {
 
   .bread {
     right: 20px;
+    top: 20%;
   }
-  .btn-home {
-    bottom: 0;
-  }
+
   .header-secondary {
     text-align: center;
     margin: 0 auto 60px auto;
@@ -622,6 +644,10 @@ textarea:focus {
     text-align: center;
   }
 
+  .btn-home {
+    bottom: 20%;
+  }
+
   input[type='text'],
   input[type='email'],
   input[type='number'],
@@ -662,21 +688,11 @@ textarea:focus {
     margin: 20px 0 0 0;
     color: white;
   }
-}
-
-@media screen and (max-width: 320px) {
   #home {
     height: 100vh;
   }
-  .bread {
-    top: 15%;
-  }
-
-  #about {
-    height: 100%;
-    overflow: hidden;
-  }
 }
+
 @media screen and (max-width: 1024px) and (min-width: 415px) {
   .experience {
     width: 100%;
